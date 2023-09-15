@@ -6,7 +6,7 @@ path="getUpdates"
 
 # runner
 
-resp=$( bash curl.sh "${path}" | jq )
+resp=$( bash get.sh "${path}" | jq )
 
 datetime=$( date +%Y%m%d%H%M%S )
 
