@@ -1,18 +1,18 @@
 # [Telegram](https://core.telegram.org/bots/api)
 
-## POST getUpdates
+## getUpdates
 
 ```sh
 bash ./src/getters/getUpdates.sh
 ```
 
-## GET getChat
+## getChat
 
 ```sh
 bash ./src/getters/getChat.sh
 ```
 
-## GET sendMessage
+## sendMessage
 
 ```sh
 bash ./src/setters/sendMessage.sh "-1000000001010" "$( date )"
