@@ -1,6 +1,6 @@
-# [Telegram](https://core.telegram.org/bots/api)
+# [Telegram API](https://core.telegram.org/bots/api)
 
-A Telegram API caller
+Telegram API
 
 ## getUpdates
 
