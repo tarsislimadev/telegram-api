@@ -1,5 +1,7 @@
 # [Telegram](https://core.telegram.org/bots/api)
 
+A Telegram API caller
+
 ## getUpdates
 
 ```sh
