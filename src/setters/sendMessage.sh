@@ -10,7 +10,7 @@ text="${2}"
 
 # runner
 
-resp=$( bash get.sh "${path}" "chat_id=${chat_id}&text=${text}" | jq )
+resp=$( bash get.sh "${path}" $( bash ./urlencode.sh "chat_id=${chat_id}&text=${text}" ) | jq )
 
 datetime=$( date +%Y%m%d%H%M%S )
 
