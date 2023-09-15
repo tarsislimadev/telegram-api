@@ -12,6 +12,12 @@ bash ./src/getters/getUpdates.sh
 bash ./src/getters/getChat.sh
 ```
 
+## GET sendMessage
+
+```sh
+bash ./src/setters/sendMessage.sh "-1001935387272" "$( date )"
+```
+
 ## .env
 
 ```
