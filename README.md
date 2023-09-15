@@ -2,6 +2,14 @@
 
 Telegram API
 
+## .env
+
+```
+DATABASE=
+BOT_TOKEN=
+
+```
+
 ## getUpdates
 
 ```sh
@@ -18,14 +26,6 @@ bash ./src/getters/getChat.sh
 
 ```sh
 bash ./src/setters/sendMessage.sh "-1000000001010" "$( date )"
-```
-
-## .env
-
-```
-DATABASE=
-BOT_TOKEN=
-
 ```
 
 ## License
