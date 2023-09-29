@@ -6,4 +6,8 @@
 
 path="${1}"
 
-wget "https://api.telegram.org/file/bot${BOT_TOKEN}/${path}"
+dirname="${2}"
+
+mkdir -p "${dirname}"
+
+wget --directory-prefix=$dirname "https://api.telegram.org/file/bot${BOT_TOKEN}/${path}"
