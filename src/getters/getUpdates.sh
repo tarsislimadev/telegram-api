@@ -8,7 +8,7 @@ path="getUpdates"
 
 resp=$( bash get.sh "${path}" | jq )
 
-datetime=$( date +%Y%m%d%H%M%S )
+. datetime.sh
 
 # outputs
 
