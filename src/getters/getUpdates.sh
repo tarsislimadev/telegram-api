@@ -6,7 +6,7 @@ path="getUpdates"
 
 # runner
 
-resp=$( bash get.sh "${path}" | jq )
+resp=$( bash get.sh "${path}" )
 
 . datetime.sh
 

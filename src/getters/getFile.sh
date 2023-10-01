@@ -10,7 +10,7 @@ file_id=$( bash lines.sh "${1}" )
 
 # runner
 
-resp=$( bash get.sh "${path}" "file_id=${file_id}" | jq )
+resp=$( bash get.sh "${path}" "file_id=${file_id}" )
 
 # outputs
 

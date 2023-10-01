@@ -10,7 +10,7 @@ chat_id="${1}"
 
 # runner
 
-resp=$( bash get.sh "${path}" "chat_id=${chat_id}" | jq )
+resp=$( bash get.sh "${path}" "chat_id=${chat_id}" )
 
 # outputs
 
