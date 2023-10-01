@@ -4,4 +4,4 @@ input="${1}"
 
 output="${2}"
 
-ffmpeg -i "${input}.wav" "${output}.mp3"
+ffmpeg -loglevel panic -i "${input}.wav" "${output}.mp3"
