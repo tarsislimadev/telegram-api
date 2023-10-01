@@ -5,7 +5,7 @@ Telegram API
 ## .env
 
 ```
-DATABASE=
+DATABASE=./data
 BOT_TOKEN=
 
 ```
