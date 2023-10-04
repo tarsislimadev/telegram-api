@@ -25,7 +25,7 @@ bash ./src/getters/getChat.sh
 ## sendMessage
 
 ```sh
-bash ./src/setters/sendMessage.sh "-1000000001010" "$( date )"
+bash ./src/setters/sendMessage.sh "1000000001010" "$( date )"
 ```
 
 ## License
