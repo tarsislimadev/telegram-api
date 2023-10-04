@@ -1,1 +1,1 @@
-rm -rf *mp3 *wav
+rm -rf *mp3 *wav *jpeg
