@@ -2,7 +2,7 @@
 
 Telegram API
 
-## .env
+### .env
 
 ```
 DATABASE=./data
@@ -10,24 +10,34 @@ BOT_TOKEN=
 
 ```
 
-## getUpdates
+## getters
+
+### getUpdates
 
 ```sh
 bash ./src/getters/getUpdates.sh
 ```
 
-## getChat
+### getChat
 
 ```sh
 bash ./src/getters/getChat.sh
 ```
 
-## sendMessage
+## setters
+
+### sendMessage
 
 ```sh
 bash ./src/setters/sendMessage.sh <CHAT-ID> <MESSAGE>
 ```
 
-## License
+### sendAudio
+
+```sh
+bash ./src/setters/sendAudio.sh <CHAT-ID> <MESSAGE>
+```
+
+### License
 
 [MIT](./LICENSE)
