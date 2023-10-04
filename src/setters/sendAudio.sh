@@ -16,11 +16,9 @@ bash espeak.sh "${text}" "${datetime}"
 
 bash ffmpeg.sh "${datetime}" "${datetime}"
 
-audio="${datetime}.mp3"
-
 # runner
 
-resp=$( curl -svL -F "audio=@${audio}" "https://api.telegram.org/bot${BOT_TOKEN}/${path}?chat_id=${chat_id}" )
+resp=$( curl -svL -F "audio=@${datetime}.mp3" "https://api.telegram.org/bot${BOT_TOKEN}/${path}?chat_id=${chat_id}" )
 
 . datetime.sh
 
