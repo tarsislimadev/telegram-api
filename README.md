@@ -2,6 +2,8 @@
 
 Telegram API
 
+## install
+
 ### .env
 
 ```
@@ -10,7 +12,7 @@ BOT_TOKEN=
 
 ```
 
-## getters
+## how to use
 
 ### getUpdates
 
@@ -24,8 +26,6 @@ bash ./src/getters/getUpdates.sh
 bash ./src/getters/getChat.sh
 ```
 
-## setters
-
 ### sendMessage
 
 ```sh
@@ -37,8 +37,6 @@ bash ./src/setters/sendMessage.sh <CHAT-ID> <MESSAGE>
 ```sh
 bash ./src/setters/sendAudio.sh <CHAT-ID> <MESSAGE>
 ```
-
-## notebooks
 
 ### from getFile to download
 
