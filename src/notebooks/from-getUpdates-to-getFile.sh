@@ -4,7 +4,7 @@ for update in $( ls "./data/getUpdates" )
 
 do
 
-for file_id in $( cat "./data/getUpdates/${update}/resp" | jq ".result[].message?.photo[]?.file_id" )
+for file_id in $( cat "./data/getUpdates/${update}/resp.json" | jq ".result[].message?.photo[]?.file_id" )
 
 do
 
