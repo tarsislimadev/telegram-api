@@ -26,4 +26,4 @@ resp=$( curl -svL -F "audio=@${datetime}.mp3" "https://api.telegram.org/bot${BOT
 
 bash create.sh "${path}" "${datetime}" "datetime" "${datetime}"
 
-bash create.sh "${path}" "${datetime}" "resp" "${resp}"
+bash create.sh "${path}" "${datetime}" "resp.json" "${resp}"

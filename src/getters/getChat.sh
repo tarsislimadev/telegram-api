@@ -14,6 +14,6 @@ resp=$( bash get.sh "${path}" "chat_id=${chat_id}" )
 
 # outputs
 
-bash create.sh "${path}" "${chat_id}" "resp" "${resp}"
+bash create.sh "${path}" "${chat_id}" "resp.json" "${resp}"
 
 bash create.sh "${path}" "${chat_id}" "datetime" "${datetime}"
