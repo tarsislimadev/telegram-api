@@ -38,6 +38,26 @@ bash ./src/setters/sendMessage.sh <CHAT-ID> <MESSAGE>
 bash ./src/setters/sendAudio.sh <CHAT-ID> <MESSAGE>
 ```
 
-### License
+## notebooks
+
+### from getFile to download
+
+```sh
+bash ./src/notebooks/from-getFile-to-download.sh
+```
+
+### from getUpdates to getChat
+
+```sh
+bash ./src/notebooks/from-getUpdates-to-getChat.sh
+```
+
+### from getUpdates to getFile
+
+```sh
+bash ./src/notebooks/from-getUpdates-to-getFile.sh
+```
+
+### license
 
 [MIT](./LICENSE)
