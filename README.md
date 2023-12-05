@@ -21,25 +21,25 @@ BOT_TOKEN=
 ### getUpdates
 
 ```sh
-bash ./src/getters/getUpdates.sh
+bash ./src/getUpdates.sh
 ```
 
 ### getChat
 
 ```sh
-bash ./src/getters/getChat.sh
+bash ./src/getChat.sh
 ```
 
 ### sendMessage
 
 ```sh
-bash ./src/setters/sendMessage.sh <CHAT-ID> <MESSAGE>
+bash ./src/sendMessage.sh <CHAT-ID> <MESSAGE>
 ```
 
 ### sendAudio
 
 ```sh
-bash ./src/setters/sendAudio.sh <CHAT-ID> <MESSAGE>
+bash ./src/sendAudio.sh <CHAT-ID> <MESSAGE>
 ```
 
 ### from getFile to download
