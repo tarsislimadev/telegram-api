@@ -10,7 +10,7 @@ for chat_id in $( cat "data/getUpdates/${update}/resp.json" | jq ".result[].mess
 
 do
 
-. ./src/getters/getChat.sh "${chat_id}"
+. ./src/getChat.sh "${chat_id}"
 
 done
 
