@@ -8,7 +8,7 @@ for file_id in $( cat "./data/getUpdates/${update}/resp.json" | jq ".result[].me
 
 do
 
-bash ./src/getFile.sh "${file_id}"
+sh ./src/getFile.sh "${file_id}"
 
 done
 

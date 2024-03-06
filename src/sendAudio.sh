@@ -12,9 +12,9 @@ text="${2}"
 
 . datetime.sh
 
-bash espeak.sh "${text}" "${datetime}"
+sh espeak.sh "${text}" "${datetime}"
 
-bash ffmpeg.sh "${datetime}" "${datetime}"
+sh ffmpeg.sh "${datetime}" "${datetime}"
 
 # runner
 
@@ -24,6 +24,6 @@ resp=$( curl -svL -F "audio=@${datetime}.mp3" "https://api.telegram.org/bot${BOT
 
 # outputs
 
-bash create.sh "${path}" "${datetime}" "datetime" "${datetime}"
+sh create.sh "${path}" "${datetime}" "datetime" "${datetime}"
 
-bash create.sh "${path}" "${datetime}" "resp.json" "${resp}"
+sh create.sh "${path}" "${datetime}" "resp.json" "${resp}"

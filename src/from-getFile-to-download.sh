@@ -10,7 +10,7 @@ do
 
 file_path=$( cat "./data/getFile/${file}/resp.json" | jq ".result.file_path" )
 
-bash ./src/download.sh "$( bash lines.sh "${file_path}" )" "./data/download"
+sh ./src/download.sh "$( sh lines.sh "${file_path}" )" "./data/download"
 
 done
 

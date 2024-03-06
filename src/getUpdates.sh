@@ -6,12 +6,12 @@ path="getUpdates"
 
 # runner
 
-resp=$( bash get.sh "${path}" )
+resp=$( sh get.sh "${path}" )
 
 . datetime.sh
 
 # outputs
 
-bash create.sh "${path}" "${datetime}" "datetime" "${datetime}"
+sh create.sh "${path}" "${datetime}" "datetime" "${datetime}"
 
-bash create.sh "${path}" "${datetime}" "resp.json" "${resp}"
+sh create.sh "${path}" "${datetime}" "resp.json" "${resp}"

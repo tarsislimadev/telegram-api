@@ -6,14 +6,14 @@ path="getFile"
 
 . datetime.sh
 
-file_id=$( bash lines.sh "${1}" )
+file_id=$( sh lines.sh "${1}" )
 
 # runner
 
-resp=$( bash get.sh "${path}" "file_id=${file_id}" )
+resp=$( sh get.sh "${path}" "file_id=${file_id}" )
 
 # outputs
 
-bash create.sh "${path}" "${file_id}" "resp.json" "${resp}"
+sh create.sh "${path}" "${file_id}" "resp.json" "${resp}"
 
-bash create.sh "${path}" "${file_id}" "datetime" "${datetime}"
+sh create.sh "${path}" "${file_id}" "datetime" "${datetime}"
