@@ -21,43 +21,43 @@ BOT_TOKEN=
 ### getUpdates
 
 ```sh
-bash ./src/getUpdates.sh
+sh ./src/getUpdates.sh
 ```
 
 ### getChat
 
 ```sh
-bash ./src/getChat.sh
+sh ./src/getChat.sh
 ```
 
 ### sendMessage
 
 ```sh
-bash ./src/sendMessage.sh <CHAT-ID> <MESSAGE>
+sh ./src/sendMessage.sh <CHAT-ID> <MESSAGE>
 ```
 
 ### sendAudio
 
 ```sh
-bash ./src/sendAudio.sh <CHAT-ID> <MESSAGE>
+sh ./src/sendAudio.sh <CHAT-ID> <MESSAGE>
 ```
 
 ### from getFile to download
 
 ```sh
-bash ./src/notebooks/from-getFile-to-download.sh
+sh ./src/notebooks/from-getFile-to-download.sh
 ```
 
 ### from getUpdates to getChat
 
 ```sh
-bash ./src/notebooks/from-getUpdates-to-getChat.sh
+sh ./src/notebooks/from-getUpdates-to-getChat.sh
 ```
 
 ### from getUpdates to getFile
 
 ```sh
-bash ./src/notebooks/from-getUpdates-to-getFile.sh
+sh ./src/notebooks/from-getUpdates-to-getFile.sh
 ```
 
 ## license
