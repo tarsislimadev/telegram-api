@@ -1,19 +1,13 @@
 #!/usr/bin/sh
 
-# inputs
-
 path="getFile"
 
 . datetime.sh
 
-file_id=$( sh lines.sh "${1}" )
+file_id=$( . lines.sh "${1}" )
 
-# runner
+resp=$( . get.sh "${path}" "file_id=${file_id}" )
 
-resp=$( sh get.sh "${path}" "file_id=${file_id}" )
+. create.sh "${path}" "${file_id}" "resp.json" "${resp}"
 
-# outputs
-
-sh create.sh "${path}" "${file_id}" "resp.json" "${resp}"
-
-sh create.sh "${path}" "${file_id}" "datetime" "${datetime}"
+. create.sh "${path}" "${file_id}" "datetime" "${datetime}"

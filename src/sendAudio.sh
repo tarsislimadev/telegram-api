@@ -1,7 +1,5 @@
 #!/usr/bin/sh
 
-# inputs
-
 . .env
 
 path="sendAudio"
@@ -12,20 +10,16 @@ text="${2}"
 
 . datetime.sh
 
-sh espeak.sh "${text}" "${datetime}"
+. espeak.sh "${text}" "${datetime}"
 
-sh ffmpeg.sh "${datetime}" "${datetime}"
-
-# runner
+. ffmpeg.sh "${datetime}" "${datetime}"
 
 resp=$( curl -svL -F "audio=@${datetime}.mp3" "https://api.telegram.org/bot${BOT_TOKEN}/${path}?chat_id=${chat_id}" )
 
 . datetime.sh
 
-# outputs
+. create.sh "${path}" "${datetime}" "datetime" "${datetime}"
 
-sh create.sh "${path}" "${datetime}" "datetime" "${datetime}"
-
-sh create.sh "${path}" "${datetime}" "resp.json" "${resp}"
+. create.sh "${path}" "${datetime}" "resp.json" "${resp}"
 
 echo "${path}" "${datetime}" "${resp}"

@@ -1,7 +1,5 @@
 #!/usr/bin/sh
 
-# inputs
-
 . .env
 
 path="${1}"
