@@ -1,17 +1,33 @@
 #!/usr/bin/sh
 
+# echo ". .env"
 . .env
 
+# echo index "${index}"
 index="${1}"
 
+# echo id "${id}"
 id="${2}"
 
-prop="${3}"
+# echo file "${file}"
+file="${3}"
 
+# echo content "${content}"
 content="${4}"
 
-mkdir -p "${DATABASE}/${index}/${id}"
-touch "${DATABASE}/${index}/${id}/${prop}"
-echo "${content}"> "${DATABASE}/${index}/${id}/${prop}"
+# echo dir "${dir}"
+dir="${DATABASE}/${index}/${id}"
 
-echo "written in ${DATABASE}/${index}/${id}/${prop}"
+bytes=$( expr length "${content}" )
+
+if [[ "${bytes}" -le 0 ]]; then
+  echo "exiting with ${bytes}" bytes
+
+  exit 0
+fi
+
+echo "writing ${bytes} bytes in ${dir}/${file}" 
+
+mkdir -p "${dir}"
+touch "${dir}/${file}"
+bash ./lines.sh "${content}" > "${dir}/${file}" 
